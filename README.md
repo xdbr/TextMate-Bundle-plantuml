@@ -48,7 +48,7 @@ Contributing
 Hints, Links, Miscellanea
 -------------------------
 
-* <http://www.asciiflow.com/>
+* <http://plantuml.sourceforge.net/>
 
 Author
 ------

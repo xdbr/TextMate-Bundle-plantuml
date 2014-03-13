@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/sh
+
+TMPFILE=`mktemp -d /tmp/plantuml.XXXXXX` &amp;&amp; plantuml $TM_FILEPATH -o $TMPFILE -tpng -charset UTF-8 2&gt;&amp;1 &gt;/dev/null &amp;&amp; echo \&lt;img src=\"file:///$TMPFILE/$(basename ${TM_FILEPATH%%plantuml})png\"\/\&gt;</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Preview</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>uuid</key>
+	<string>4BEDAA0A-DFD2-4A7D-81F0-A37464D02685</string>
+</dict>
+</plist>

@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string>#!/bin/sh
 
-TMPFILE=`mktemp -d /tmp/plantuml.XXXXXX` &amp;&amp; plantuml $TM_FILEPATH -o $TMPFILE -tpng -charset UTF-8 2&gt;&amp;1 &gt;/dev/null &amp;&amp; echo \&lt;img src=\"file:///$TMPFILE/$(basename ${TM_FILEPATH%%plantuml})png\"\/\&gt;</string>
+TMPFILE=`mktemp -d /tmp/plantuml.XXXXXX` &amp;&amp; plantuml $TM_FILEPATH -o $TMPFILE -tpng -charset UTF-8 2&gt;&amp;1 &gt;/dev/null &amp;&amp; echo \&lt;img src=\"file:///$TMPFILE/$(basename ${TM_FILEPATH%.*}).png\"\/\&gt;</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
